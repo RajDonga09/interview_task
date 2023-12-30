@@ -5,4 +5,5 @@ class AppString {
 
   static const String appName = 'Exercise App';
   static const String noDataFound = 'No data found';
+  static String unableToLoad = 'Loading Error';
 }
