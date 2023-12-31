@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:interview_task/core/core.dart';
-import 'package:interview_task/modules/exercise/presentation/pages/exercise_main_screen.dart';
+import 'package:interview_task/modules/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void startTimer() {
     if (timeOutTimer?.isActive ?? false) timeOut();
     timeOutTimer = Timer.periodic(const Duration(seconds: 3), (timer) async {
-      await AppNavigator.pushReplacement(context, const ExerciseMainScreen());
+      await AppNavigator.pushReplacement(context, const MainScreen());
     });
   }
 

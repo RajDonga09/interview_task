@@ -13,5 +13,6 @@ class AnimalsApiResponse with _$AnimalsApiResponse {
     @Key('entries') required List<AnimalDetailsModel> animalsList,
   }) = _AnimalsApiResponse;
 
-  factory AnimalsApiResponse.fromJson(Map<String, dynamic> json) => _$AnimalsApiResponseFromJson(json);
+  factory AnimalsApiResponse.fromJson(Map<String, dynamic> json) =>
+      _$AnimalsApiResponseFromJson(json);
 }

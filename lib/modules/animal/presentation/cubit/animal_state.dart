@@ -4,7 +4,8 @@ abstract class AnimalsState extends Equatable {
   final AnimalsApiResponse animalsApiResponse;
 
   const AnimalsState({
-    this.animalsApiResponse = const AnimalsApiResponse(count: 0, animalsList: []),
+    this.animalsApiResponse =
+        const AnimalsApiResponse(count: 0, animalsList: []),
   });
 
   @override
